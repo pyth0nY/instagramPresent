@@ -2,7 +2,7 @@
 
 console.log('');
  
-const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+const PROXY_URL = '##################';
 
  
 async function imageUrlToBase64(url) {
