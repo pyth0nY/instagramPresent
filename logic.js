@@ -1,8 +1,5 @@
-console.log('🧠 [Logic] Módulo de lógica (con envío de avatar) cargado.');
-
-
-const SUPABASE_URL = 'https://ptrpjcqqrcomskafisrx.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0cnBqY3FxcmNvbXNrYWZpc3J4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIyNzg0NTMsImV4cCI6MjA2Nzg1NDQ1M30.8iJvRGKuzhpQMQCOsg_mBlnCNc1U51V-Nmn81E0Aak4';
+const SUPABASE_URL = '############################################';
+const SUPABASE_ANON_KEY = '###############################';
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 let myInstagramUsername = null;
@@ -13,7 +10,7 @@ const CHECK_INTERVAL = 15000;
 const ACTIVE_THRESHOLD_MINUTES = 5;
 
 function initializeLogic() {
-    console.log('🚀 [Logic] Inicializando...');
+    console.log('Inicializando...');
     setTimeout(findMyInfo, 2000);
 }
 
