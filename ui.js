@@ -1,9 +1,7 @@
-console.log('[UI] modulo cargado.');
-
 let lastKnownActivity = 'Conectando...';
 
 function initializeUI() {
-    console.log('✨ [UI] Inicializando UI...');
+    console.log('Inicializando UI...');
     injectAndStyleFloatingWidget();
 
     document.addEventListener('activityUpdated', (event) => {
@@ -13,7 +11,7 @@ function initializeUI() {
 
     document.addEventListener('friendsActivityUpdated', (event) => {
         const friends = event.detail.friends;
-        console.log(`🎨 [UI] Recibida actividad de ${friends.length} amigos.`);
+        console.log(`Recibida actividad de ${friends.length} amigos.`);
         updateFriendsList(friends);
     });
 }
